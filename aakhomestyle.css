@@ -1,0 +1,155 @@
+﻿@charset "utf-8";
+html, body {
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+ }
+h1, h2, h3, h4, h5, h6 {
+ font-family: Arial, Helvetica, sans-serif;
+ }
+ h1 { font-size: 3em; }
+ h2 { font-size: 1.5em; }
+ h3 { font-size: 1.2em ; }
+ h4 { font-size: 1.0em; }
+ h5 { font-size: 0.9em; }
+ h6 { font-size: 0.8em; }
+
+
+
+
+.navbar {
+margin: 0px;
+left: 200px;
+background-color: rgba(0,0,0,0.75);
+list-style-type: none;
+padding: none;
+overflow: hidden;
+box-sizing: border-box;
+box-shadow:inset 0px -5px black;
+margin-bottom: 100px;
+}
+.navbar a {
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+font-size: 30px;
+margin: 0px;
+font-weight: bold;
+padding: 10px 80px;
+display: block;
+
+border-bottom: 5px solid black;
+float: left;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+background-color: white;
+color: black;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+min-width: 200px;
+z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.dropdown {
+float: left;
+overflow: hidden;
+}
+.dropdown-content a{
+float: none;
+text-align: left;
+display: block;
+text-transform: capitalize;
+font-size: 20px;
+border: none;
+background-color: black;
+}
+.dropdown .dropbtn {
+margin: 0;
+font-family: inherit;
+background-color: inherit;
+outline: none;
+font-size: 30px;
+font-weight: bold;
+padding: 10px 80px;
+display: block;
+color: white;
+text-transform: uppercase;
+border-right: none;
+border-top: none;
+border-bottom: 5px solid black;
+border-left: none;
+}
+.dropdown-content a:hover {
+border:none;
+background-color: rgba(0,0,0,0.3);
+}
+
+.top {
+background-image: url("C:/Users/Main User/Documents/pianobackground.jpg");
+z-index: 1;
+background-size: cover;
+}
+
+
+
+.heading{
+text-transform: uppercase;
+color: black;
+text-align: center;
+font-size: 75px;
+margin: 0px;
+padding: 50px;
+text-shadow: 2px 2px 2px gray;
+}
+.gear {
+color: white;
+}
+body {
+z-index:0;
+}
+
+.preview {
+margin: auto;
+box-sizing: border-box;
+width: 800px;
+text-align: left;
+background-color: lightgray;
+padding: 30px;
+box-shadow: 10px 10px black;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+button.readmore {
+border: 5px solid black;
+font-size: 20px;
+font-weight: bold;
+padding: 10px 20px;
+background-color: white;
+}
+button.readmore:hover {
+border: 5px solid white;
+background-color: black;
+color: white;
+}
+.review {
+margin: auto;
+box-sizing: border-box;
+width: 1000px;
+text-align: left;
+background-color: lightgray;
+padding: 30px;
+
+margin-bottom: 100px;
+}
+
+
+
+
+
+
+
