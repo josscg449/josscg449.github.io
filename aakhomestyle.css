@@ -126,7 +126,7 @@ padding: 25px;
 margin-top: 100px;
 margin-bottom: 100px;
 }
-button.readmore {
+.readmore {
 border: 5px solid black;
 font-size: 20px;
 font-weight: bold;
@@ -134,13 +134,13 @@ padding: 10px 20px;
 background-color: white;
 outline: none;
 }
-button.readmore:hover {
+.readmore:hover {
 border: 5px solid lightgray;
 background-color: black;
 color: white;
 outline: none;
 }
-button.readmore:active {
+.readmore:active {
 outline:none;
 }
 .review {
@@ -193,6 +193,31 @@ color: darkgray;
 }
 .author:hover {
 color: gray;
+}
+.comments {
+margin-left: 70px;
+box-sizing: border-box;
+width: 60%;
+text-align: left;
+background-color: white;
+padding: 30px;
+
+margin-bottom: 100px;
+}
+.addcomment {
+margin-left: 70px;
+box-sizing: border-box;
+width: 60%;
+text-align: left;
+background-color: white;
+padding: 30px;
+font-weight: bold;
+
+margin-bottom: 100px;
+}
+.mainfield {
+width: 50%;
+hieght: 300px;
 }
 
 
