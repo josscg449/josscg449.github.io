@@ -5,6 +5,7 @@
 <link rel="icon" type="image/png" href="pianoicon.png">
 <link href="aakhomestyle.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name = "viewport" content="width=device-width, initial-scale=1"> 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -17,7 +18,7 @@
 <body>
 <div class="top">
 <h1 class ="heading">Al<span class="gear">l</span> A<span class="gear">b</span>o<span class="gear">ut</span> Ke<span class="gear">y</span>s</h1>
-<div class="navbar">
+<div id ="navbar">
   <a href ="index.html">Home</a>
   
 <div class="dropdown">
@@ -33,6 +34,7 @@
   <a href ="aakabout.html">About</a>
 </div>
 </div>
+<div class="content">
 <div class="rev">
 <div class="revhead">
 <h1>Casio Privia PX-560 Review: The Affordable Stage Piano That Does it All!</h1>
@@ -113,6 +115,20 @@ I can tweak all the sounds how I want them with a wide range of effects and hex 
 versatile instrument that is very user friendly in all aspects. I hope you enjoyed reading my Casio Privia PX-560 review!
 </p>
 </div>
+</div>
+<script type="text/javascript">
 
+function stickyFunction(element){
+if (window.pageYOffset >=sticky){element.classList.add("sticky")}
+else{element.classList.remove("sticky");
+}
+}
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+window.onscroll = function () {setTimeout(stickyFunction(navbar)),5000}; 
+
+</script>
 </body>
 </html>

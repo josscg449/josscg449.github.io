@@ -18,10 +18,20 @@ p {
 font-size: 1.2em;
 }
 
+.sticky {
+position: fixed;
+top: 0;
+margin-left:0px;
+padding:none;
+width: 100%;
+}
 
-.navbar {
+.sticky + .content {
+padding-top: 60px;
+}
+
+#navbar {
 margin: 0px;
-left: 200px;
 background-color: rgba(0,0,0,0.75);
 list-style-type: none;
 padding: none;
@@ -30,7 +40,9 @@ box-sizing: border-box;
 box-shadow:inset 0px -5px black;
 margin-bottom: 50px;
 }
-.navbar a {
+
+#navbar a {
+
 text-decoration: none;
 color: white;
 text-transform: uppercase;
@@ -39,32 +51,35 @@ margin: 0px;
 font-weight: bold;
 padding: 10px 80px;
 display: block;
-
 border-bottom: 5px solid black;
 float: left;
 }
-.navbar a:hover, .dropdown:hover .dropbtn {
 
+#navbar a:hover, #navbar .dropdown .dropbtn:hover, #navbar .dropdown .dropdown-content a:hover {
 background-color: white;
 color: black;
 }
-.dropdown-content {
+
+#navbar .dropdown .dropdown-content {
 display: none;
-position: absolute;
+position: fixed;
 min-width: 200px;
 z-index: 1;
 border-left: 5px solid black;
 border-right: 5px solid black;
 border-bottom: 5px solid black;
 }
-.dropdown:hover .dropdown-content {
+
+#navbar .dropdown:hover .dropdown-content {
 display: block;
 }
-.dropdown {
+
+#navbar .dropdown {
 float: left;
 overflow: hidden;
 }
-.dropdown-content a{
+
+#navbar .dropdown .dropdown-content a{
 float: none;
 text-align: left;
 display: block;
@@ -73,7 +88,8 @@ font-size: 20px;
 border: none;
 background-color: black;
 }
-.dropdown .dropbtn {
+
+#navbar .dropdown .dropbtn {
 margin: 0;
 font-family: inherit;
 background-color: inherit;
@@ -89,7 +105,8 @@ border-top: none;
 border-bottom: 5px solid black;
 border-left: none;
 }
-.dropdown-content a:hover {
+
+#navbar .dropdown .dropdown-content a:hover {
 border:none;
 }
 
@@ -98,8 +115,6 @@ background-image: url("pianobackground.jpg");
 z-index: 1;
 background-size: cover;
 }
-
-
 
 .heading{
 text-transform: uppercase;
@@ -158,6 +173,17 @@ padding: 30px;
 
 margin-bottom: 100px;
 }
+.authorpara {
+margin-left: 70px;
+box-sizing: border-box;
+width: 60%;
+text-align: left;
+background-color: white;
+
+padding: 30px;
+margin-top: 100px;
+margin-bottom: 100px;
+}
 .image {
 display: block;
 margin: auto;
@@ -188,6 +214,7 @@ display: block;
 width: 90%;
 margin: auto;
 padding: 10px 0px;
+margin-top: 100px;
 margin-bottom: 50px;
 margin-left: 70px;
 }
