@@ -3,9 +3,12 @@
 <head>
 <title>Casio Privia PX-560 Review</title>
 <link rel="icon" type="image/png" href="pianoicon.png">
-<link href="aakhomestyle.css" rel="stylesheet" type="text/css">
+<link id = "pagestyle" href="aakhomestyle.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name = "viewport" content="width=device-width, initial-scale=1"> 
+<meta name = "description" content="A review on the Casio PX-560, a truly versatile, yet affordable digital stage piano. 
+See how far Casio have come in comparison to the other stage pianos on the market. It may come as a surprise, but Casio may
+ have created the best all round digital piano to buy in 2019."> 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -32,6 +35,12 @@
 </div>
 
   <a href ="aakabout.html">About</a>
+<div class = "togglekeys">
+     <p>Invert Keys<label id="switch">
+        <input id = "check" type="checkbox" onClick="toggleSwitch()">
+        <span class="slider"></span>
+     </label></p>
+  </div>
 </div>
 </div>
 <div class="content">
@@ -115,20 +124,64 @@ I can tweak all the sounds how I want them with a wide range of effects and hex 
 versatile instrument that is very user friendly in all aspects. I hope you enjoyed reading my Casio Privia PX-560 review!
 </p>
 </div>
-</div>
-<script type="text/javascript">
+</div><script type="text/javascript">
 
-function stickyFunction(element){
-if (window.pageYOffset >=sticky){element.classList.add("sticky")}
-else{element.classList.remove("sticky");
+function stickyFunction(element) {
+if (window.pageYOffset >= sticky){element.classList.add("sticky");
+
+}else{element.classList.remove("sticky");
+
 }
 }
 
+
+function dropdownPosition() {
+if (window.pageYOffset >= sticky) {document.querySelector(".dropdown-content").style.position = "fixed";
+
+}else{document.querySelector(".dropdown-content").style.position = "absolute";
+
+}
+}
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-window.onscroll = function () {setTimeout(stickyFunction(navbar)),5000}; 
+window.onscroll = function () {setTimeout(stickyFunction(navbar)),5000; dropdownPosition();}
 
 </script>
+
+<script type="text/javascript">
+
+function changeStyle(sheet){
+document.getElementById("pagestyle").setAttribute("href", sheet);
+}
+
+var switched = document.getElementById("check");
+ 
+function toggleSwitch () {
+switch (switched.checked){
+case true: changeStyle("aakhomestyletwo.css");
+break;
+case false: changeStyle("aakhomestyle.css");
+break;
+};
+setSwitch();
+}
+
+function setSwitch () {
+switch (switched.checked){
+case true: JSON.parse(sessionStorage.setItem("isSwitched", "true"));
+break;
+case false: JSON.parse(sessionStorage.setItem("isSwitched", "false"));
+break;
+}
+}
+
+function getSwitch () {
+switched.checked = JSON.parse(sessionStorage.getItem("isSwitched"));
+toggleSwitch();
+}
+
+window.onload = getSwitch();
+</script>
 </body>
-</html>
+</html>>

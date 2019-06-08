@@ -45,42 +45,42 @@ padding-top: 60px;
 
 #navbar {
 margin: 0px;
-background-color: rgba(0,0,0,0.75);
+background-color: rgba(255,255,255,0.95);
 list-style-type: none;
 padding: none;
 overflow: hidden;
 box-sizing: border-box;
-box-shadow:inset 0px -5px black;
+box-shadow:inset 0px -5px white;
 margin-bottom: 50px;
 }
 
 #navbar a, #navbar .home, #navbar .about {
 
 text-decoration: none;
-color: white;
+color: black;
 text-transform: uppercase;
 font-size: 30px;
 margin: 0px;
 font-weight: bold;
 padding: 10px 80px;
 display: block;
-border-bottom: 5px solid black;
+border-bottom: 5px solid white;
 float: left;
 }
 
 #navbar a:hover, #navbar .dropdown .dropbtn:hover, #navbar .dropdown .dropdown-content a:hover, #navbar .home:hover, #navbar .about:hover {
-background-color: white;
-color: black;
+background-color: black;
+color: white;
 }
 
 #navbar .dropdown .dropdown-content {
 display: none;
-position: absolute;
+position: fixed;
 min-width: 200px;
 z-index: 1;
-border-left: 5px solid black;
-border-right: 5px solid black;
-border-bottom: 5px solid black;
+border-left: 5px solid white;
+border-right: 5px solid white;
+border-bottom: 5px solid white;
 }
 
 #navbar .dropdown:hover .dropdown-content, #navbar-i .dropdown:hover .dropdown-content {
@@ -99,7 +99,7 @@ display: block;
 text-transform: capitalize;
 font-size: 20px;
 border: none;
-background-color: black;
+background-color: white;
 }
 
 #navbar .dropdown .dropbtn {
@@ -111,11 +111,11 @@ font-size: 30px;
 font-weight: bold;
 padding: 10px 80px;
 display: block;
-color: white;
+color: black;
 text-transform: uppercase;
 border-right: none;
 border-top: none;
-border-bottom: 5px solid black;
+border-bottom: 5px solid white;
 border-left: none;
 }
 
@@ -124,14 +124,14 @@ border:none;
 }
 
 .top {
-background-image: url("pianobackground.jpg");
+background-image: url("pianobackgroundinvert.jpg");
 z-index: 1;
 background-size: cover;
 }
 
 .heading{
 text-transform: uppercase;
-color: black;
+color: white;
 text-align: center;
 font-size: 75px;
 font-size: 5.5vw;
@@ -140,11 +140,11 @@ padding: 50px;
 text-shadow: -3px -3px 10px darkgray;
 }
 .gear {
-color: white;
+color: black;
 }
 body {
 z-index:0;
-background-color: lightgray;
+background-color: rgb(20,20,20);
 }
 
 .preview {
@@ -152,24 +152,25 @@ margin-left: 70px;
 box-sizing: border-box;
 width: 60%;
 text-align: left;
-background-color: white;
+background-color: black;
 padding: 25px;
-
+color: white;
 margin-top: 100px;
 margin-bottom: 100px;
 }
 .readmore {
-border: 5px solid black;
+border: 5px solid white;
 font-size: 20px;
 font-weight: bold;
 padding: 10px 20px;
-background-color: white;
+background-color: black;
 outline: none;
+color: white;
 }
 .readmore:hover {
 border: 5px solid lightgray;
-background-color: black;
-color: white;
+background-color: white;
+color: black;
 outline: none;
 }
 .readmore:active {
@@ -180,8 +181,8 @@ margin-left: 70px;
 box-sizing: border-box;
 width: 60%;
 text-align: left;
-background-color: white;
-
+background-color: black;
+color: white;
 padding: 30px;
 
 margin-bottom: 100px;
@@ -191,8 +192,8 @@ margin-left: 70px;
 box-sizing: border-box;
 width: 60%;
 text-align: left;
-background-color: white;
-
+background-color: black;
+color: white;
 padding: 30px;
 margin-top: 100px;
 margin-bottom: 100px;
@@ -208,21 +209,22 @@ width: 90%;
 
 margin: 0px 10px;
 
-background-color: white;
-
+background-color: black;
+color: white;
 }
 .revdate {
 
 margin: 0px 10px;
 margin-top: 0px;
-border-top: 2px solid black;
+border-top: 2px solid white;
 font-size: 20px;
 font-weight: bold;
-background-color: white;
-
+background-color: black;
+color: white;
 }
 .rev {
-background-color: white;
+background-color: black;
+color: white;
 display: block;
 width: 90%;
 margin: auto;
@@ -271,7 +273,8 @@ padding: none;
 box-sizing: border-box;
 display: inline-block;
 position: inherit;
-background-color: white;
+background-color: black;
+color: white;
 width: 235px;
 list-style-type: none;
 border: 5px solid gray;
