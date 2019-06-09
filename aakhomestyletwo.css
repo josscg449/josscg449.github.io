@@ -53,8 +53,13 @@ box-sizing: border-box;
 box-shadow:inset 0px -5px white;
 margin-bottom: 50px;
 }
+@media only screen and (max-width: 600px){
+#navbar  {
+box-shadow: none;
+}
+}
 
-#navbar a, #navbar .home, #navbar .about {
+#navbar a{
 
 text-decoration: none;
 color: black;
@@ -67,6 +72,13 @@ display: block;
 border-bottom: 5px solid white;
 float: left;
 }
+@media only screen and (max-width: 600px){
+#navbar a {
+font-size: 20px;
+padding: 10px;
+border: none;
+}
+}
 
 #navbar a:hover, #navbar .dropdown .dropbtn:hover, #navbar .dropdown .dropdown-content a:hover, #navbar .home:hover, #navbar .about:hover {
 background-color: black;
@@ -76,12 +88,19 @@ color: white;
 #navbar .dropdown .dropdown-content {
 display: none;
 position: fixed;
-min-width: 325px;
+min-width: 250px;
 z-index: 1;
 border-left: 5px solid white;
 border-right: 5px solid white;
 border-bottom: 5px solid white;
 }
+@media only screen and (max-width: 600px){
+#navbar .dropdown .dropdown-content {
+border: none;
+min-width: 100px;
+}
+}
+
 
 #navbar .dropdown:hover .dropdown-content, #navbar-i .dropdown:hover .dropdown-content {
 display: block;
@@ -109,7 +128,7 @@ background-color: inherit;
 outline: none;
 font-size: 30px;
 font-weight: bold;
-padding: 10px 80px;
+padding: 10px 40px;
 display: block;
 color: black;
 text-transform: uppercase;
@@ -117,6 +136,13 @@ border-right: none;
 border-top: none;
 border-bottom: 5px solid white;
 border-left: none;
+}
+@media only screen and (max-width: 600px){
+#navbar .dropdown .dropbtn {
+font-size: 20px;
+padding: 10px;
+border: none;
+}
 }
 
 #navbar .dropdown .dropdown-content a:hover, #navbar-i .dropdown .dropdown-content a:hover {
@@ -128,6 +154,13 @@ background-image: url("pianobackgroundinvert.jpg");
 z-index: 1;
 background-size: cover;
 }
+@media only screen and (max-width: 600px){
+.top {
+background-image: url("pianobackgroundinvertmobile.jpg");
+background-color: lightgrey;
+background-size: cover;
+}
+}
 
 .heading{
 text-transform: uppercase;
@@ -138,6 +171,18 @@ font-size: 5.5vw;
 margin: 0px;
 padding: 50px;
 text-shadow: -3px -3px 10px darkgray;
+}
+@media only screen and (max-width: 600px){
+.heading{
+font-size: 54px;
+text-align: left;
+margin: 0px;
+padding: none;
+position: relative;
+top: -50px;
+right: 40px;
+text-shadow: 3px 3px 5px darkgray;
+}
 }
 .gear {
 color: black;
@@ -157,6 +202,14 @@ padding: 25px;
 color: white;
 margin-top: 100px;
 margin-bottom: 100px;
+}
+@media only screen and (max-width: 600px){
+.preview{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
 }
 .readmore {
 border: 5px solid white;
@@ -187,6 +240,14 @@ padding: 30px;
 
 margin-bottom: 100px;
 }
+@media only screen and (max-width: 600px){
+.review{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
+}
 .authorpara {
 margin-left: 70px;
 box-sizing: border-box;
@@ -197,6 +258,14 @@ color: white;
 padding: 30px;
 margin-top: 100px;
 margin-bottom: 100px;
+}
+@media only screen and (max-width: 600px){
+.authorpara{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
 }
 .image {
 display: block;
@@ -232,6 +301,14 @@ padding: 10px 0px;
 margin-top: 100px;
 margin-bottom: 50px;
 margin-left: 70px;
+}
+@media only screen and (max-width: 600px){
+.rev{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
 }
 .author {
 text-decoration: none;
@@ -282,17 +359,42 @@ border-radius: 3em;
 margin-top: 10px;
 margin-right: 10px;
 }
+@media only screen and (max-width: 600px){
+#navbar .togglekeys  {
+width: 40px;
+border-radius: 20px;
+margin-top: 14px;
+margin-bottom: 5px;
+padding: 0px;
+border: none;
+}
+}
 #navbar .togglekeys p {
 padding: 3px 20px;
 text-transform: uppercase;
 margin: auto;
 font-weight: bold;
 }
+@media only screen and (max-width: 600px){
+#navbar .togglekeys p {
+font-size: 0;
+padding: none;
+
+}
+}
 #switch {
 position: relative;
 display: inline-block;
 width: 45px;
 height: 20px;
+}
+@media only screen and (max-width: 600px){
+#switch {
+width: 20px;
+height: 10px;
+right: 42px;
+top: 3px;
+}
 }
 #switch input {
 opacity:0;

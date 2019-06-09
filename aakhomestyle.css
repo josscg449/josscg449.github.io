@@ -14,13 +14,7 @@ h1, h2, h3, h4, h5, h6 {
  h5 { font-size: 0.9em; }
  h6 { font-size: 0.8em; }
 
-@media only screen and (max-width:600px){
-.top {
-background-image: url("pianobackgroundmobile.jpg");
-z-index: 1;
-background-size: cover;
-}
-}
+
 p {
 font-size: 1.2em;
 }
@@ -60,6 +54,11 @@ box-sizing: border-box;
 box-shadow:inset 0px -5px black;
 margin-bottom: 50px;
 }
+@media only screen and (max-width: 600px){
+#navbar  {
+box-shadow: none;
+}
+}
 
 #navbar a {
 
@@ -74,6 +73,13 @@ display: block;
 border-bottom: 5px solid black;
 float: left;
 }
+@media only screen and (max-width: 600px){
+#navbar a {
+font-size: 20px;
+padding: 10px;
+border: none;
+}
+}
 
 #navbar a:hover, #navbar .dropdown .dropbtn:hover, #navbar .dropdown .dropdown-content a:hover {
 background-color: white;
@@ -83,14 +89,20 @@ color: black;
 #navbar .dropdown .dropdown-content {
 display: none;
 position: absolute;
-min-width: 325px;
+min-width: 250px;
 z-index: 1;
 border-left: 5px solid black;
 border-right: 5px solid black;
 border-bottom: 5px solid black;
 }
+@media only screen and (max-width: 600px){
+#navbar .dropdown .dropdown-content {
+border: none;
+min-width: 100px;
+}
+}
 
-#navbar .dropdown:hover .dropdown-content, #navbar-i .dropdown:hover .dropdown-content {
+#navbar .dropdown:hover .dropdown-content {
 display: block;
 }
 
@@ -109,6 +121,7 @@ border: none;
 background-color: black;
 }
 
+
 #navbar .dropdown .dropbtn {
 margin: 0;
 font-family: inherit;
@@ -116,7 +129,7 @@ background-color: inherit;
 outline: none;
 font-size: 30px;
 font-weight: bold;
-padding: 10px 80px;
+padding: 10px 40px;
 display: block;
 color: white;
 text-transform: uppercase;
@@ -124,6 +137,13 @@ border-right: none;
 border-top: none;
 border-bottom: 5px solid black;
 border-left: none;
+}
+@media only screen and (max-width: 600px){
+#navbar .dropdown .dropbtn {
+font-size: 20px;
+padding: 10px;
+border: none;
+}
 }
 
 #navbar .dropdown .dropdown-content a:hover {
@@ -135,7 +155,13 @@ background-image: url("pianobackground.jpg");
 z-index: 1;
 background-size: cover;
 }
-
+@media only screen and (max-width: 600px){
+.top {
+background-image: url("pianobackgroundmobile.jpg");
+background-color: lightgrey;
+background-size: cover;
+}
+}
 .heading{
 text-transform: uppercase;
 color: black;
@@ -145,6 +171,18 @@ font-size: 5.5vw;
 margin: 0px;
 padding: 50px;
 text-shadow: -3px -3px 10px darkgray;
+}
+@media only screen and (max-width: 600px){
+.heading{
+font-size: 54px;
+text-align: left;
+margin: 0px;
+padding: none;
+position: relative;
+top: -50px;
+right: 40px;
+text-shadow: 3px 3px 5px darkgray;
+}
 }
 .gear {
 color: white;
@@ -164,6 +202,14 @@ padding: 25px;
 
 margin-top: 100px;
 margin-bottom: 100px;
+}
+@media only screen and (max-width: 600px){
+.preview{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
 }
 .readmore {
 border: 5px solid black;
@@ -193,6 +239,14 @@ padding: 30px;
 
 margin-bottom: 100px;
 }
+@media only screen and (max-width: 600px){
+.review{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
+}
 .authorpara {
 margin-left: 70px;
 box-sizing: border-box;
@@ -203,6 +257,14 @@ background-color: white;
 padding: 30px;
 margin-top: 100px;
 margin-bottom: 100px;
+}
+@media only screen and (max-width: 600px){
+.authorpara{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
 }
 .image {
 display: block;
@@ -237,6 +299,14 @@ padding: 10px 0px;
 margin-top: 100px;
 margin-bottom: 50px;
 margin-left: 70px;
+}
+@media only screen and (max-width: 600px){
+.rev{
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 95%;
+}
 }
 .author {
 text-decoration: none;
@@ -286,17 +356,43 @@ border-radius: 3em;
 margin-top: 10px;
 margin-right: 10px;
 }
+@media only screen and (max-width: 600px){
+#navbar .togglekeys  {
+width: 40px;
+border-radius: 20px;
+margin-top: 14px;
+margin-bottom: 5px;
+padding: 0px;
+border: none;
+}
+}
+
 #navbar .togglekeys p {
 padding: 3px 20px;
 text-transform: uppercase;
 margin: auto;
 font-weight: bold;
 }
+@media only screen and (max-width: 600px){
+#navbar .togglekeys p {
+font-size: 0;
+padding: none;
+
+}
+}
 #switch {
 position: relative;
 display: inline-block;
 width: 45px;
 height: 20px;
+}
+@media only screen and (max-width: 600px){
+#switch {
+width: 20px;
+height: 10px;
+right: 42px;
+top: 3px;
+}
 }
 #switch input {
 opacity:0;
@@ -314,6 +410,7 @@ background-color: gray;
 -webkit-transition: .4s;
 transition: .4s;
 }
+
 .slider:before {
 border-radius: 50%;
 position: absolute;
