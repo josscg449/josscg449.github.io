@@ -43,8 +43,16 @@ width: 100%;
 .sticky + .content {
 padding-top: 60px;
 }
-
+.empty {
+display: block;
+flex-grow: 1;
+}
 #navbar {
+display: inline-flex;
+width: 100%;
+allign-items: center;
+flex-wrap: nowrap;
+justify-content: space-between;
 margin: 0px;
 background-color: rgba(0,0,0,0.75);
 list-style-type: none;
@@ -52,7 +60,7 @@ padding: none;
 overflow: hidden;
 box-sizing: border-box;
 box-shadow:inset 0px -5px black;
-margin-bottom: 50px;
+
 }
 @media only screen and (max-width: 600px){
 #navbar  {
@@ -61,14 +69,15 @@ box-shadow: none;
 }
 
 #navbar a {
-
+text-align: center;
 text-decoration: none;
+flex-grow: 1;
 color: white;
 text-transform: uppercase;
-font-size: 30px;
+font-size: 28px;
 margin: 0px;
 font-weight: bold;
-padding: 10px 40px;
+padding: 11px 5px;
 display: block;
 border-bottom: 5px solid black;
 float: left;
@@ -89,7 +98,8 @@ color: black;
 #navbar .dropdown .dropdown-content {
 display: none;
 position: absolute;
-min-width: 250px;
+width: inherit;
+min-width: 350px;
 z-index: 1;
 border-left: 5px solid black;
 border-right: 5px solid black;
@@ -109,6 +119,7 @@ display: block;
 #navbar .dropdown {
 float: left;
 overflow: hidden;
+flex-grow:1;
 }
 
 #navbar .dropdown .dropdown-content a{
@@ -124,12 +135,14 @@ background-color: black;
 
 #navbar .dropdown .dropbtn {
 margin: 0;
+width: 100%;
+text-align: center;
 font-family: inherit;
 background-color: inherit;
 outline: none;
-font-size: 30px;
+font-size: 28px;
 font-weight: bold;
-padding: 10px 40px;
+padding: 11px 5px;
 display: block;
 color: white;
 text-transform: uppercase;
@@ -175,6 +188,7 @@ text-shadow: -3px -3px 10px darkgray;
 @media only screen and (max-width: 600px){
 .heading{
 font-size: 54px;
+font-size: 14vw;
 text-align: left;
 margin: 0px;
 padding: none;
@@ -186,6 +200,11 @@ text-shadow: 3px 3px 5px darkgray;
 }
 .gear {
 color: white;
+}
+@media only screen and (max-width: 600px){
+.separate {
+display: block;
+}
 }
 body {
 z-index:0;
@@ -345,30 +364,34 @@ hieght: 300px;
 }
 #navbar .togglekeys {
 padding: none;
+
 box-sizing: border-box;
 display: inline-block;
 float: right;
 background-color: white;
-width: 235px;
+width: 225px;
 list-style-type: none;
 border: 5px solid gray;
 border-radius: 3em;
 margin-top: 10px;
 margin-right: 10px;
+margin-left: 0px;
+margin-bottom: 10px;
 }
 @media only screen and (max-width: 600px){
 #navbar .togglekeys  {
 width: 40px;
 border-radius: 20px;
 margin-top: 14px;
-margin-bottom: 5px;
+margin-bottom: 14px;
 padding: 0px;
 border: none;
 }
 }
 
 #navbar .togglekeys p {
-padding: 3px 20px;
+padding: 3px 10px;
+font-size: 20px;
 text-transform: uppercase;
 margin: auto;
 font-weight: bold;
@@ -377,7 +400,6 @@ font-weight: bold;
 #navbar .togglekeys p {
 font-size: 0;
 padding: none;
-
 }
 }
 #switch {
@@ -385,12 +407,13 @@ position: relative;
 display: inline-block;
 width: 45px;
 height: 20px;
+
 }
 @media only screen and (max-width: 600px){
 #switch {
 width: 20px;
 height: 10px;
-right: 42px;
+right: 32px;
 top: 3px;
 }
 }
@@ -425,9 +448,9 @@ background-color: gray;
 }
 
 input:checked + .slider:before {
--webkit-transform: translateX(26px);
- -ms-transform: translateX(26px);
-  transform: translateX(26px);
+-webkit-transform: translateX(24px);
+ -ms-transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 

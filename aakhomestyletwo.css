@@ -42,8 +42,16 @@ width: 100%;
 .sticky + .content {
 padding-top: 60px;
 }
-
+.empty {
+display: block;
+flex-grow: 1;
+}
 #navbar {
+display: inline-flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+flex-wrap: nowrap;
 margin: 0px;
 background-color: rgba(255,255,255,0.95);
 list-style-type: none;
@@ -51,7 +59,7 @@ padding: none;
 overflow: hidden;
 box-sizing: border-box;
 box-shadow:inset 0px -5px white;
-margin-bottom: 50px;
+
 }
 @media only screen and (max-width: 600px){
 #navbar  {
@@ -60,14 +68,15 @@ box-shadow: none;
 }
 
 #navbar a{
-
+flex-grow: 1;
+text-align: center;
 text-decoration: none;
 color: black;
 text-transform: uppercase;
-font-size: 30px;
+font-size: 28px;
 margin: 0px;
 font-weight: bold;
-padding: 10px 40px;
+padding: 11px 5px;
 display: block;
 border-bottom: 5px solid white;
 float: left;
@@ -88,7 +97,7 @@ color: white;
 #navbar .dropdown .dropdown-content {
 display: none;
 position: fixed;
-min-width: 250px;
+min-width: 350px;
 z-index: 1;
 border-left: 5px solid white;
 border-right: 5px solid white;
@@ -109,6 +118,7 @@ display: block;
 #navbar .dropdown, #navbar-i .dropdown {
 float: left;
 overflow: hidden;
+flex-grow: 1;
 }
 
 #navbar .dropdown .dropdown-content a{
@@ -122,13 +132,15 @@ background-color: white;
 }
 
 #navbar .dropdown .dropbtn {
+text align: center;
+width: 100%;
 margin: 0;
 font-family: inherit;
 background-color: inherit;
 outline: none;
-font-size: 30px;
+font-size: 28px;
 font-weight: bold;
-padding: 10px 40px;
+padding: 11px 5px;
 display: block;
 color: black;
 text-transform: uppercase;
@@ -175,6 +187,7 @@ text-shadow: -3px -3px 10px darkgray;
 @media only screen and (max-width: 600px){
 .heading{
 font-size: 54px;
+font-size: 14vw;
 text-align: left;
 margin: 0px;
 padding: none;
@@ -186,6 +199,11 @@ text-shadow: 3px 3px 5px darkgray;
 }
 .gear {
 color: black;
+}
+@media only screen and (max-width: 600px){
+.separate {
+display: block;
+}
 }
 body {
 z-index:0;
@@ -352,25 +370,28 @@ display: inline-block;
 float: right;
 background-color: black;
 color: white;
-width: 235px;
+width: 225px;
 list-style-type: none;
 border: 5px solid gray;
 border-radius: 3em;
 margin-top: 10px;
 margin-right: 10px;
+margin-left: 0px;
+margin-bottom: 10px;
 }
 @media only screen and (max-width: 600px){
 #navbar .togglekeys  {
 width: 40px;
 border-radius: 20px;
 margin-top: 14px;
-margin-bottom: 5px;
+margin-bottom: 14px;
 padding: 0px;
 border: none;
 }
 }
 #navbar .togglekeys p {
-padding: 3px 20px;
+font-size: 20px;
+padding: 3px 10px;
 text-transform: uppercase;
 margin: auto;
 font-weight: bold;
@@ -392,7 +413,7 @@ height: 20px;
 #switch {
 width: 20px;
 height: 10px;
-right: 42px;
+right: 32px;
 top: 3px;
 }
 }
@@ -426,9 +447,9 @@ background-color: gray;
 }
 
 input:checked + .slider:before {
--webkit-transform: translateX(26px);
- -ms-transform: translateX(26px);
-  transform: translateX(26px);
+-webkit-transform: translateX(24px);
+ -ms-transform: translateX(24px);
+  transform: translateX(24px);
 }
 
 
