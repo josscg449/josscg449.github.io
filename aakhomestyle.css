@@ -116,6 +116,12 @@ min-width: 100px;
 display: block;
 }
 
+@media only screen and (max-width: 600px){
+#navbar .dropdown:active .dropdown-content {
+display: block;
+}
+}
+
 #navbar .dropdown {
 float: left;
 overflow: hidden;
