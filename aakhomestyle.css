@@ -34,6 +34,7 @@ text-decoration: underline;
 }
 .sticky {
 position: fixed;
+
 top: 0;
 margin-left:0px;
 padding:none;

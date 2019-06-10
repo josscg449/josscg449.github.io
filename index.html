@@ -86,7 +86,7 @@ if (window.pageYOffset >= sticky){element.classList.add("sticky");
 
 function dropdownPosition() {
 if (window.pageYOffset >= sticky) {document.querySelector(".dropdown-content").style.position = "fixed";
-
+document.querySelector(".dropdown-content").style.transform = "translate3d(0px,0px,0px)";
 }else{document.querySelector(".dropdown-content").style.position = "absolute";
 
 }
