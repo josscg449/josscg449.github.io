@@ -91,10 +91,11 @@ border: none;
 }
 }
 
-#navbar a:hover, #navbar .dropdown .dropbtn:hover, #navbar .dropdown .dropdown-content a:hover {
+#navbar a:hover, #navbar .dropdown:hover .dropbtn, #navbar .dropdown .dropdown-content a:hover {
 background-color: white;
 color: black;
 }
+
 
 #navbar .dropdown .dropdown-content {
 display: none;
@@ -112,10 +113,10 @@ border: none;
 min-width: 100px;
 }
 }
-
 #navbar .dropdown:hover .dropdown-content {
 display: block;
 }
+
 
 @media only screen and (max-width: 600px){
 #navbar .dropdown:active .dropdown-content {

@@ -89,7 +89,7 @@ border: none;
 }
 }
 
-#navbar a:hover, #navbar .dropdown .dropbtn:hover, #navbar .dropdown .dropdown-content a:hover, #navbar .home:hover, #navbar .about:hover {
+#navbar a:hover, #navbar .dropdown:hover .dropbtn, #navbar .dropdown .dropdown-content a:hover, #navbar .home:hover, #navbar .about:hover {
 background-color: black;
 color: white;
 }
