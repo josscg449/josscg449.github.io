@@ -14,7 +14,73 @@ h1, h2, h3, h4, h5, h6 {
  h5 { font-size: 0.9em; }
  h6 { font-size: 0.8em; }
 
-
+.nav .icon {
+display: none;
+}
+@media only screen and (max-width: 600px){
+.nav .icon {
+position: relative;
+float: none;
+display: initial;
+box-sizing: border-box;
+padding: 10px 30px;
+order: 0;
+flex: 0 0 40px;
+border: none;
+}
+.nav .icon:hover {
+background-color: black;
+color: white;
+}
+.nav .togglekeys{
+float: none;
+order: 1;
+box-sizing: border-box;
+flex:1 0 40%%;
+border: none;
+}
+}
+@media only screen and (max-width: 600px){
+.nav {
+width: 100%;
+max-width: 600px;
+height: auto;
+display: flex;
+overflow-x: visible;
+overflow-y: auto;
+justify-content: flex-start;
+align-items: stretch;
+align-content: stretch;
+flex-flow: row wrap;
+box-shadow: none;
+display: -webkit-flex; 
+-webkit-flex-flow: row wrap;
+border: none; 
+}
+.nav .desk, .nav .dropdown {
+display: none;
+order: 2;
+float: none;
+flex: 1 0 80%;
+background-color: black;
+}
+.nav.responsive .desk, .nav.responsive .dropdown {
+display: block;
+position: relstive;
+}
+.nav .dropdown .dropdown-content a {
+border: none;
+background-color: gray;
+}
+.nav .dropdown .dropdown{
+position: relative;
+display: flex;
+flex-flow: column nowrap;
+}
+.nav .dropdown .dropdown-content {
+flex: 1 0 80px;
+}
+}
 p {
 font-size: 1.2em;
 }
@@ -48,28 +114,23 @@ padding-top: 60px;
 display: block;
 flex-grow: 1;
 }
-#navbar {
+.nav {
 display: inline-flex;
 width: 100%;
 allign-items: center;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 justify-content: space-between;
 margin: 0px;
 background-color: rgba(0,0,0,0.75);
 list-style-type: none;
 padding: none;
-overflow: hidden;
 box-sizing: border-box;
 box-shadow:inset 0px -5px black;
 
 }
-@media only screen and (max-width: 600px){
-#navbar  {
-box-shadow: none;
-}
-}
 
-#navbar a {
+
+.nav a {
 text-align: center;
 text-decoration: none;
 flex-grow: 1;
@@ -84,20 +145,21 @@ border-bottom: 5px solid black;
 float: left;
 }
 @media only screen and (max-width: 600px){
-#navbar a {
+.nav a {
 font-size: 20px;
 padding: 10px;
 border: none;
+float:none;
 }
 }
 
-#navbar a:hover, #navbar .dropdown:hover .dropbtn, #navbar .dropdown .dropdown-content a:hover {
+.nav a:hover, .nav .dropdown:hover .dropbtn, .nav .dropdown .dropdown-content a:hover {
 background-color: white;
 color: black;
 }
 
 
-#navbar .dropdown .dropdown-content {
+.nav .dropdown .dropdown-content {
 display: none;
 position: absolute;
 width: inherit;
@@ -108,29 +170,26 @@ border-right: 5px solid black;
 border-bottom: 5px solid black;
 }
 @media only screen and (max-width: 600px){
-#navbar .dropdown .dropdown-content {
+.nav .dropdown .dropdown-content {
+position: relative;
 border: none;
-min-width: 100px;
 }
 }
-#navbar .dropdown:hover .dropdown-content {
+.nav .dropdown:hover .dropdown-content {
 display: block;
 }
 
 
-@media only screen and (max-width: 600px){
-#navbar .dropdown:active .dropdown-content {
-display: block;
-}
-}
 
-#navbar .dropdown {
+
+.nav .dropdown {
 float: left;
 overflow: hidden;
 flex-grow:1;
 }
 
-#navbar .dropdown .dropdown-content a{
+
+.nav .dropdown .dropdown-content a{
 float: none;
 text-align: left;
 display: block;
@@ -139,9 +198,16 @@ font-size: 20px;
 border: none;
 background-color: black;
 }
+@media only screen and (max-width: 600px){
+.nav .dropdown .dropdown-content a {
+border: none;
+background-color: rgb(20,20,20);
+
+}
+}
 
 
-#navbar .dropdown .dropbtn {
+.nav .dropdown .dropbtn {
 margin: 0;
 width: 100%;
 text-align: center;
@@ -160,14 +226,14 @@ border-bottom: 5px solid black;
 border-left: none;
 }
 @media only screen and (max-width: 600px){
-#navbar .dropdown .dropbtn {
+.nav .dropdown .dropbtn {
 font-size: 20px;
 padding: 10px;
 border: none;
 }
 }
 
-#navbar .dropdown .dropdown-content a:hover {
+.nav .dropdown .dropdown-content a:hover {
 border:none;
 }
 
@@ -370,7 +436,7 @@ margin-bottom: 100px;
 width: 50%;
 hieght: 300px;
 }
-#navbar .togglekeys {
+.nav .togglekeys {
 padding: none;
 
 box-sizing: border-box;
@@ -387,7 +453,7 @@ margin-left: 0px;
 margin-bottom: 10px;
 }
 @media only screen and (max-width: 600px){
-#navbar .togglekeys  {
+.nav .togglekeys  {
 width: 40px;
 border-radius: 20px;
 margin-top: 14px;
@@ -397,7 +463,7 @@ border: none;
 }
 }
 
-#navbar .togglekeys p {
+.nav .togglekeys p {
 padding: 3px 10px;
 font-size: 20px;
 text-transform: uppercase;
@@ -405,7 +471,7 @@ margin: auto;
 font-weight: bold;
 }
 @media only screen and (max-width: 600px){
-#navbar .togglekeys p {
+.nav .togglekeys p {
 font-size: 0;
 padding: none;
 }

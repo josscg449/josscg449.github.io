@@ -21,8 +21,10 @@ See how far Casio have come in comparison to the other stage pianos on the marke
 <body>
 <div class="top">
 <h1 class ="heading"><span class"separate"> Al<span class="gear">l</span></span> <span class="separate">A<span class="gear">b</span>o<span class="gear">ut</span></span> <span class = "separate">Ke<span class="gear">y</span>s</span></h1>
-<div id ="navbar">
-  <a href ="index.html">Home</a>
+<div id ="navbar" class = "nav">
+
+<a class="icon" style="font-size: 15px;" onclick="responsiveDrop()">&#9776;</a>
+  <a class = "desk" href ="index.html">Home</a>
   
 <div class="dropdown">
 
@@ -34,7 +36,7 @@ See how far Casio have come in comparison to the other stage pianos on the marke
 </div>
 </div>
 
-  <a href ="aakabout.html">About</a>
+  <a class="desk" href ="aakabout.html">About</a>
 <div class = "empty"></div>
 <div class = "togglekeys">
      <p>Invert Keys<label id="switch">
@@ -136,17 +138,14 @@ if (window.pageYOffset >= sticky){element.classList.add("sticky");
 }
 
 
-function dropdownPosition() {
-if (window.pageYOffset >= sticky) {document.querySelector(".dropdown-content").style.position = "fixed";
-
-}else{document.querySelector(".dropdown-content").style.position = "absolute";
-
-}
+function responsiveDrop(){
+if (navbar.className === "nav"){navbar.className += " responsive";}
+else{navbar.className ="nav";}
 }
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-window.onscroll = function () {setTimeout(stickyFunction(navbar)),5000; dropdownPosition();}
+window.onscroll = function () {setTimeout(stickyFunction(navbar)),5000}
 
 </script>
 
