@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav .icon {
 display: none;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav .icon {
 position: relative;
 float: none;
@@ -40,10 +40,10 @@ flex:1 0 40%%;
 border: none;
 }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav {
 width: 100%;
-max-width: 600px;
+max-width: 1000px;
 height: auto;
 display: flex;
 overflow-x: visible;
@@ -144,7 +144,7 @@ display: block;
 border-bottom: 5px solid black;
 float: left;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav a {
 font-size: 30px;
 padding: 10px;
@@ -169,7 +169,7 @@ border-left: 5px solid black;
 border-right: 5px solid black;
 border-bottom: 5px solid black;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav .dropdown .dropdown-content {
 position: relative;
 border: none;
@@ -198,7 +198,7 @@ font-size: 20px;
 border: none;
 background-color: black;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav .dropdown .dropdown-content a {
 border: none;
 background-color: rgb(20,20,20);
@@ -225,7 +225,7 @@ border-top: none;
 border-bottom: 5px solid black;
 border-left: none;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav .dropdown .dropbtn {
 font-size: 30px;
 padding: 10px;
@@ -242,7 +242,7 @@ background-image: url("pianobackground.jpg");
 z-index: 1;
 background-size: cover;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .top {
 background-image: url("pianobackgroundmobile.jpg");
 background-color: lightgrey;
@@ -259,7 +259,7 @@ margin: 0px;
 padding: 50px;
 text-shadow: -3px -3px 10px darkgray;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .heading{
 font-size: 54px;
 font-size: 14vw;
@@ -275,7 +275,7 @@ text-shadow: 3px 3px 5px darkgray;
 .gear {
 color: white;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .separate {
 display: block;
 }
@@ -296,7 +296,7 @@ padding: 25px;
 margin-top: 100px;
 margin-bottom: 100px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .preview{
 margin: auto;
 margin-top: 50px;
@@ -332,7 +332,7 @@ padding: 30px;
 
 margin-bottom: 100px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .review{
 margin: auto;
 margin-top: 50px;
@@ -351,7 +351,7 @@ padding: 30px;
 margin-top: 100px;
 margin-bottom: 100px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .authorpara{
 margin: auto;
 margin-top: 50px;
@@ -393,7 +393,7 @@ margin-top: 100px;
 margin-bottom: 50px;
 margin-left: 70px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .rev{
 margin: auto;
 margin-top: 50px;
@@ -452,7 +452,7 @@ margin-right: 10px;
 margin-left: 0px;
 margin-bottom: 10px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav .togglekeys  {
 width: 40px;
 border-radius: 20px;
@@ -470,7 +470,7 @@ text-transform: uppercase;
 margin: auto;
 font-weight: bold;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 .nav .togglekeys p {
 font-size: 0;
 padding: none;
@@ -483,7 +483,7 @@ width: 45px;
 height: 20px;
 
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
 #switch {
 width: 20px;
 height: 10px;
