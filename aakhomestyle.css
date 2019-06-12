@@ -23,7 +23,7 @@ position: relative;
 float: none;
 display: initial;
 box-sizing: border-box;
-padding: 10px 30px;
+padding: 20px 30px;
 order: 0;
 flex: 0 0 40px;
 border: none;
@@ -146,7 +146,7 @@ float: left;
 }
 @media only screen and (max-width: 600px){
 .nav a {
-font-size: 20px;
+font-size: 30px;
 padding: 10px;
 border: none;
 float:none;
@@ -202,7 +202,7 @@ background-color: black;
 .nav .dropdown .dropdown-content a {
 border: none;
 background-color: rgb(20,20,20);
-
+font-size: 30px;
 }
 }
 
@@ -227,7 +227,7 @@ border-left: none;
 }
 @media only screen and (max-width: 600px){
 .nav .dropdown .dropbtn {
-font-size: 20px;
+font-size: 30px;
 padding: 10px;
 border: none;
 }
@@ -456,8 +456,8 @@ margin-bottom: 10px;
 .nav .togglekeys  {
 width: 40px;
 border-radius: 20px;
-margin-top: 14px;
-margin-bottom: 14px;
+margin-top: 26px;
+margin-bottom: 26px;
 padding: 0px;
 border: none;
 }
