@@ -46,6 +46,9 @@ padding-top: 60px;
 display: block;
 flex-grow: 1;
 }
+#navbar .icon {
+display: none;
+}
 #navbar {
 display: inline-flex;
 width: 100%;
