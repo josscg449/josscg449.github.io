@@ -29,9 +29,7 @@ flex: 0 0 40px;
 border: none;
 }
 
-.sticky .icon, .sticky .togglekeys {
-position: fixed;
-}
+
 
 .nav .icon:hover {
 background-color: black;
@@ -47,7 +45,7 @@ position: relative;
 }
 }
 @media only screen and (max-width: 1000px){
-.nav,  {
+.nav {
 width: 100%;
 max-width: 1000px;
 height: auto;
@@ -61,6 +59,7 @@ box-shadow: none;
 display: -webkit-flex; 
 -webkit-flex-flow: row wrap;
 border: none; 
+background-color: rgb(40,40,40);
 }
 .nav .desk, .nav .dropdown {
 display: none;
@@ -117,7 +116,11 @@ margin-left:0px;
 padding:none;
 width: 100%;
 }
-
+@media only screen and (max-width: 1000px){
+.sticky {
+position: relative;
+}
+}
 .sticky + .content {
 padding-top: 60px;
 }
@@ -137,9 +140,25 @@ list-style-type: none;
 padding: none;
 box-sizing: border-box;
 box-shadow:inset 0px -5px black;
-
 }
-
+@media only screen and (max-width: 1000px){
+.nav {
+width: 100%;
+max-width: 1000px;
+height: auto;
+display: flex;
+overflow: auto;
+justify-content: flex-start;
+align-items: stretch;
+align-content: stretch;
+flex-flow: row wrap;
+box-shadow: none;
+display: -webkit-flex; 
+-webkit-flex-flow: row wrap;
+border: none; 
+background-color: rgb(40,40,40);
+}
+}
 
 .nav a {
 text-align: center;
@@ -219,7 +238,7 @@ background-color: black;
 @media only screen and (max-width: 1000px){
 .nav .dropdown .dropdown-content a {
 border: none;
-background-color: rgb(20,20,20);
+background-color: rgb(40,40,40);
 font-size: 25px;
 }
 }

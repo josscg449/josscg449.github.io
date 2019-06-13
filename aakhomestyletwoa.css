@@ -14,83 +14,6 @@ h1, h2, h3, h4, h5, h6 {
  h5 { font-size: 0.9em; }
  h6 { font-size: 0.8em; }
 
-.nav .icon {
-display: none;
-}
-@media only screen and (max-width: 1000px){
-.nav .icon {
-position: relative;
-float: none;
-display: block;
-box-sizing: border-box;
-padding: 20px 30px;
-order: 0;
-flex: 0 0 40px;
-border: none;
-}
-
-
-
-.nav .icon:hover {
-background-color: white;
-color: black;
-}
-.nav .togglekeys{
-float: none;
-order: 1;
-box-sizing: border-box;
-flex:1 0 40%%;
-border: none;
-position: relative;
-}
-}
-@media only screen and (max-width: 1000px){
-.nav {
-width: 100%;
-max-width: 1000px;
-height: auto;
-display: flex;
-overflow: auto;
-justify-content: flex-start;
-align-items: stretch;
-align-content: stretch;
-flex-flow: row wrap;
-box-shadow: none;
-display: -webkit-flex; 
--webkit-flex-flow: row wrap;
-border: none; 
-background-color: rgb(40,40,40);
-}
-.nav .desk, .nav .dropdown {
-display: none;
-order: 2;
-float: none;
-flex: 1 0 95%;
-background-color: white;
-position: relative;
-z-index: 100;
-}
-.sticky.responsive .desk, .sticky.responsive .dropdown, .nav.responsive .desk, .nav.responsive .dropdown {
-display: block;
-
-}
-.nav.responsive .icon {
-background-color: white;
-}
-
-.nav .dropdown .dropdown-content a {
-border: none;
-background-color: gray;
-}
-.nav .dropdown .dropdown{
-position: relative;
-display: flex;
-flex-flow: column nowrap;
-}
-.nav .dropdown .dropdown-content {
-flex: 1 0 80px;
-}
-}
 p {
 font-size: 1.2em;
 }
@@ -110,17 +33,12 @@ text-decoration: underline;
 }
 .sticky {
 position: fixed;
-z-index: 100;
 top: 0;
 margin-left:0px;
 padding:none;
 width: 100%;
 }
-@media only screen and (max-width: 1000px){
-.sticky {
-position: relative;
-}
-}
+
 .sticky + .content {
 padding-top: 60px;
 }
@@ -128,42 +46,34 @@ padding-top: 60px;
 display: block;
 flex-grow: 1;
 }
-.nav {
+#navbar .icon {
+display: none;
+}
+#navbar {
 display: inline-flex;
 width: 100%;
-allign-items: center;
-flex-wrap: wrap;
 justify-content: space-between;
+align-items: center;
+flex-wrap: nowrap;
 margin: 0px;
 background-color: rgba(255,255,255,0.95);
 list-style-type: none;
 padding: none;
+overflow: hidden;
 box-sizing: border-box;
 box-shadow:inset 0px -5px white;
+
 }
-@media only screen and (max-width: 1000px){
-.nav {
-width: 100%;
-max-width: 1000px;
-height: auto;
-display: flex;
-overflow: auto;
-justify-content: flex-start;
-align-items: stretch;
-align-content: stretch;
-flex-flow: row wrap;
+@media only screen and (max-width: 600px){
+#navbar  {
 box-shadow: none;
-display: -webkit-flex; 
--webkit-flex-flow: row wrap;
-border: none; 
-background-color: rgb(215,215,215);
 }
 }
 
-.nav a {
+#navbar a{
+flex-grow: 1;
 text-align: center;
 text-decoration: none;
-flex-grow: 1;
 color: black;
 text-transform: uppercase;
 font-size: 28px;
@@ -174,59 +84,47 @@ display: block;
 border-bottom: 5px solid white;
 float: left;
 }
-@media only screen and (max-width: 1000px){
-.nav a {
-font-size: 30px;
+@media only screen and (max-width: 600px){
+#navbar a {
+font-size: 20px;
 padding: 10px;
 border: none;
-float:none;
 }
 }
 
-.nav a:hover, .nav .dropdown:hover .dropbtn, .nav .dropdown .dropdown-content a:hover {
+#navbar a:hover, #navbar .dropdown:hover .dropbtn, #navbar .dropdown .dropdown-content a:hover, #navbar .home:hover, #navbar .about:hover {
 background-color: black;
 color: white;
 }
 
-
-.nav .dropdown .dropdown-content {
+#navbar .dropdown .dropdown-content {
 display: none;
-position: absolute;
-width: inherit;
+position: fixed;
 min-width: 350px;
 z-index: 1;
 border-left: 5px solid white;
 border-right: 5px solid white;
 border-bottom: 5px solid white;
 }
-@media only screen and (max-width: 1000px){
-.nav .dropdown .dropdown-content {
-position: relative;
+@media only screen and (max-width: 600px){
+#navbar .dropdown .dropdown-content {
 border: none;
+min-width: 100px;
 }
 }
-.nav .dropdown:hover .dropdown-content {
+
+
+#navbar .dropdown:hover .dropdown-content, #navbar-i .dropdown:hover .dropdown-content {
 display: block;
 }
-@media only screen and (max-width: 1000px){
-.nav .dropdown:hover .dropdown-content{
-display: none;
-}
-.nav .dropdown .dropdown-content.alsoresponsive{
-display: block;
-}
-}
 
-
-
-.nav .dropdown {
+#navbar .dropdown, #navbar-i .dropdown {
 float: left;
 overflow: hidden;
-flex-grow:1;
+flex-grow: 1;
 }
 
-
-.nav .dropdown .dropdown-content a{
+#navbar .dropdown .dropdown-content a{
 float: none;
 text-align: left;
 display: block;
@@ -235,19 +133,11 @@ font-size: 20px;
 border: none;
 background-color: white;
 }
-@media only screen and (max-width: 1000px){
-.nav .dropdown .dropdown-content a {
-border: none;
-background-color: rgb(215,215,215);
-font-size: 25px;
-}
-}
 
-
-.nav .dropdown .dropbtn {
-margin: 0;
+#navbar .dropdown .dropbtn {
+text align: center;
 width: 100%;
-text-align: center;
+margin: 0;
 font-family: inherit;
 background-color: inherit;
 outline: none;
@@ -262,15 +152,15 @@ border-top: none;
 border-bottom: 5px solid white;
 border-left: none;
 }
-@media only screen and (max-width: 1000px){
-.nav .dropdown .dropbtn {
-font-size: 30px;
+@media only screen and (max-width: 600px){
+#navbar .dropdown .dropbtn {
+font-size: 20px;
 padding: 10px;
 border: none;
 }
 }
 
-.nav .dropdown .dropdown-content a:hover {
+#navbar .dropdown .dropdown-content a:hover, #navbar-i .dropdown .dropdown-content a:hover {
 border:none;
 }
 
@@ -279,16 +169,17 @@ background-image: url("pianobackgroundinvert.jpg");
 z-index: 1;
 background-size: cover;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 .top {
 background-image: url("pianobackgroundinvertmobile.jpg");
 background-color: lightgrey;
 background-size: cover;
 }
 }
+
 .heading{
 text-transform: uppercase;
-color: black;
+color: white;
 text-align: center;
 font-size: 75px;
 font-size: 5.5vw;
@@ -296,7 +187,7 @@ margin: 0px;
 padding: 50px;
 text-shadow: -3px -3px 10px darkgray;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 .heading{
 font-size: 54px;
 font-size: 14vw;
@@ -310,16 +201,16 @@ text-shadow: 3px 3px 5px darkgray;
 }
 }
 .gear {
-color: white;
+color: black;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 .separate {
 display: block;
 }
 }
 body {
 z-index:0;
-background-color: rgba(20,20,20);
+background-color: rgb(20,20,20);
 }
 
 .preview {
@@ -333,7 +224,7 @@ color: white;
 margin-top: 100px;
 margin-bottom: 100px;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 .preview{
 margin: auto;
 margin-top: 50px;
@@ -347,8 +238,8 @@ font-size: 20px;
 font-weight: bold;
 padding: 10px 20px;
 background-color: black;
-color: white;
 outline: none;
+color: white;
 }
 .readmore:hover {
 border: 5px solid lightgray;
@@ -370,7 +261,7 @@ padding: 30px;
 
 margin-bottom: 100px;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 .review{
 margin: auto;
 margin-top: 50px;
@@ -385,12 +276,11 @@ width: 60%;
 text-align: left;
 background-color: black;
 color: white;
-
 padding: 30px;
 margin-top: 100px;
 margin-bottom: 100px;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 .authorpara{
 margin: auto;
 margin-top: 50px;
@@ -433,7 +323,7 @@ margin-top: 100px;
 margin-bottom: 50px;
 margin-left: 70px;
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 .rev{
 margin: auto;
 margin-top: 50px;
@@ -476,13 +366,13 @@ margin-bottom: 100px;
 width: 50%;
 hieght: 300px;
 }
-.nav .togglekeys {
+#navbar .togglekeys {
 padding: none;
-
 box-sizing: border-box;
 display: inline-block;
 float: right;
-background-color: white;
+background-color: black;
+color: white;
 width: 225px;
 list-style-type: none;
 border: 5px solid gray;
@@ -491,32 +381,29 @@ margin-top: 10px;
 margin-right: 10px;
 margin-left: 0px;
 margin-bottom: 10px;
-background-color: black;
 }
-@media only screen and (max-width: 1000px){
-.nav .togglekeys  {
+@media only screen and (max-width: 600px){
+#navbar .togglekeys  {
 width: 40px;
 border-radius: 20px;
-margin-top: 26px;
-margin-bottom: 26px;
+margin-top: 14px;
+margin-bottom: 14px;
 padding: 0px;
 border: none;
 }
 }
-
-.nav .togglekeys p {
-padding: 3px 10px;
+#navbar .togglekeys p {
 font-size: 20px;
+padding: 3px 10px;
 text-transform: uppercase;
 margin: auto;
 font-weight: bold;
-color: white;
-
 }
-@media only screen and (max-width: 1000px){
-.nav .togglekeys p {
+@media only screen and (max-width: 600px){
+#navbar .togglekeys p {
 font-size: 0;
 padding: none;
+
 }
 }
 #switch {
@@ -524,9 +411,8 @@ position: relative;
 display: inline-block;
 width: 45px;
 height: 20px;
-
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 600px){
 #switch {
 width: 20px;
 height: 10px;
@@ -550,7 +436,6 @@ background-color: gray;
 -webkit-transition: .4s;
 transition: .4s;
 }
-
 .slider:before {
 border-radius: 50%;
 position: absolute;
@@ -585,7 +470,70 @@ input:checked + .slider:before {
 
 
 
+.navbar-i {
+margin: 0px;
+background-color: rgba(255,255,255,0.75);
+list-style-type: none;
+padding: none;
+overflow: hidden;
+box-sizing: border-box;
+box-shadow:inset 0px -5px white;
+margin-bottom: 50px;
 
+#navbar-i a {
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+font-size: 30px;
+margin: 0px;
+font-weight: bold;
+padding: 10px 80px;
+display: block;
+border-bottom: 5px solid white;
+float: left;
+}
+
+#navbar-i a:hover, #navbar-i .dropdown .dropbtn:hover, #navbar-i .dropdown .dropdown-content a:hover {
+background-color: black;
+color: white;
+}
+
+#navbar-i .dropdown .dropdown-content {
+display: none;
+position: fixed;
+min-width: 200px;
+z-index: 1;
+border-left: 5px solid white;
+border-right: 5px solid white;
+border-bottom: 5px solid white;
+}
+
+#navbar-i .dropdown .dropdown-content a{
+float: none;
+text-align: left;
+display: block;
+text-transform: capitalize;
+font-size: 20px;
+border: none;
+background-color: white;
+}
+
+#navbar-i .dropdown .dropbtn {
+margin: 0;
+font-family: inherit;
+background-color: inherit;
+outline: none;
+font-size: 30px;
+font-weight: bold;
+padding: 10px 80px;
+display: block;
+color: black;
+text-transform: uppercase;
+border-right: none;
+border-top: none;
+border-bottom: 5px solid white;
+border-left: none;
+}
 
 
 

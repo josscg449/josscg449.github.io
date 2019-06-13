@@ -28,9 +28,9 @@ in a digital form.">
   
 <div class="dropdown">
 
-<button class="dropbtn" href ="#">Reviews</button>
+<button class="dropbtn" href ="#" onclick="clickDrop()">Reviews</button>
 
-<div class = "dropdown-content">
+<div id ="dropdownid" class = "dropdown-content">
 <a href="aakpx560.html">Casio Privia PX-560</a>
 <a href="aakhammond.html">Hammond SK1</a>
 </div>
@@ -169,6 +169,14 @@ toggleSwitch();
 }
 
 window.onload = getSwitch();
+</script>
+<script type="text/javascript">
+var dropdownmenu = document.getElementById("dropdownid");
+function clickDrop() {
+if (dropdownmenu.className === "dropdown-content"){dropdownmenu.className += " alsoresponsive";} else
+{dropdownmenu.className = "dropdown-content";}
+}
+
 </script>
 
 
