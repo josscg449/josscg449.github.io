@@ -27,9 +27,9 @@ the latest digital pianos, stage pianos, digital oragns and much more!">
   
   <div class="dropdown">
 
-     <button class="dropbtn">Reviews</button>
+     <button class="dropbtn" onclick= "clickDrop()">Reviews</button>
 
-     <div class = "dropdown-content">
+     <div id="dropdownid" class = "dropdown-content">
                <a href="aakpx560.html">Casio Privia PX-560</a>
                <a href="aakhammond.html">Hammond SK1</a>
      </div>
@@ -82,22 +82,15 @@ if (window.pageYOffset >= sticky){element.classList.add("sticky");
 
 }
 }
-
-
-
-function clickDrop () {
-var dropDown = document.querySelector(".dropdown-content");
-if (dropDown.style.display === "none") {dropDown.style.display ="block";}
-else{ dropDown.style.display = "none";}
+function responsiveDrop(){
+if (navbar.className === "nav"){navbar.classList.add("responsive");}
+else{navbar.classList.remove("responsive");}
 }
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-function responsiveDrop(){
-if (navbar.className === "nav"){navbar.className += " responsive";}
-else{navbar.className ="nav";}
-}
 
 window.onscroll = function () {setTimeout(stickyFunction(navbar)),5000}
+
 
 </script>
 
@@ -134,6 +127,14 @@ toggleSwitch();
 }
 
 window.onload = getSwitch();
+</script>
+<script type="text/javascript">
+var dropdownmenu = document.getElementById("dropdownid");
+function clickDrop() {
+if (dropdownmenu.className === "dropdown-content"){dropdownmenu.className += " alsoresponsive";} else
+{dropdownmenu.className = "dropdown-content";}
+}
+
 </script>
 </body>
 </html>
