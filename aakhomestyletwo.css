@@ -32,9 +32,10 @@ border: none;
 
 
 .nav .icon:hover {
-background-color: white;
+background-color: rgb(215,215,215);
 color: black;
 }
+
 .nav .togglekeys{
 float: none;
 order: 1;
