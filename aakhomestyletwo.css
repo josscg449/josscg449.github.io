@@ -188,6 +188,16 @@ float:none;
 background-color: black;
 color: white;
 }
+@media only screen and (max-width: 1000px){
+.nav a:hover, .nav .dropdown:hover .dropbtn {
+background-color: white;
+color: black;
+}
+.nav .dropdown .dropdown-content a:hover {
+background-color: rgb(215,215,215);
+color: black;
+}
+}
 
 
 .nav .dropdown .dropdown-content {
