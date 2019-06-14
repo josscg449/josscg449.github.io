@@ -26,7 +26,7 @@ the latest digital pianos, stage pianos, digital oragns and much more!">
   
   <div class="dropdown">
 
-     <button class="dropbtn" onclick= "clickDrop()">Reviews</button>
+     <button id="dropbutton" class="dropbtn" onclick= "clickDrop()">Reviews</button>
 
      <div id="dropdownid" class = "dropdown-content">
                <a href="aakpx560.html">Casio Privia PX-560</a>
@@ -34,7 +34,7 @@ the latest digital pianos, stage pianos, digital oragns and much more!">
      </div>
   </div>
 
-  <a class = "desk" href ="aakabout.html">About</a>
+  <a class ="alsodesk" href ="aakabout.html">About</a>
   <div class = "empty"></div>
   <div class = "togglekeys">
      <p>Invert Keys<label id="switch">
@@ -131,7 +131,15 @@ var dropdownmenu = document.getElementById("dropdownid");
 function clickDrop() {
 if (dropdownmenu.className === "dropdown-content"){dropdownmenu.className += " alsoresponsive";} else
 {dropdownmenu.className = "dropdown-content";}
-}
+};
+
+document.addEventListener("click", function(event){
+var navbar = document.getElementById("navbar");
+var dropdownmenu = document.getElementById("dropdownid");
+var dropbutton = document.getElementById("dropbutton");
+if (event.target != navbar && event.target.parentNode != navbar && event.target != dropbutton) {navbar.classList.remove("responsive");}
+
+});
 
 </script>
 </body>

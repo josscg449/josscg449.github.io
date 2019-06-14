@@ -62,7 +62,7 @@ display: -webkit-flex;
 border: none; 
 background-color: rgb(40,40,40);
 }
-.nav .desk, .nav .dropdown {
+.nav .desk, .nav .dropdown, .nav .alsodesk{
 display: none;
 order: 2;
 float: none;
@@ -71,7 +71,7 @@ background-color: white;
 position: relative;
 z-index: 100;
 }
-.sticky.responsive .desk, .sticky.responsive .dropdown, .nav.responsive .desk, .nav.responsive .dropdown {
+.nav.responsive .desk, .nav.responsive .dropdown, .nav.responsive .alsodesk {
 display: block;
 
 }

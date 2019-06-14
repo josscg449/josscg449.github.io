@@ -42,7 +42,7 @@ flex: 1 0 80px;
 background-color: rgb(40,40,40);
 color: white;
 }
-.nav .desk, .nav .dropdown {
+.nav .desk, .nav .dropdown, .nav .alsodesk {
 display: none;
 order: 2;
 float: none;
@@ -55,7 +55,7 @@ z-index: 100;
 @media only screen and (max-width: 1000px){
 
 
-.nav.responsive .desk, .nav.responsive .dropdown {
+.responsive .desk, .responsive .dropdown, .responsive .alsodesk {
 display: block;
 
 }

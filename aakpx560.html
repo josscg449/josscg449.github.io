@@ -28,7 +28,7 @@ See how far Casio have come in comparison to the other stage pianos on the marke
   
 <div class="dropdown">
 
-<button class="dropbtn" href ="#" onclick="clickDrop()">Reviews</button>
+<button id ="dropbutton" class="dropbtn" href ="#" onclick="clickDrop()">Reviews</button>
 
 <div id="dropdownid" class = "dropdown-content">
 <a href="aakpx560.html">Casio Privia PX-560</a>
@@ -189,7 +189,11 @@ function clickDrop() {
 if (dropdownmenu.className === "dropdown-content"){dropdownmenu.className += " alsoresponsive";} else
 {dropdownmenu.className = "dropdown-content";}
 }
+document.addEventListener("click", function(event){
+var navbar = document.getElementById("navbar");
+if (event.target != navbar && event.target.parentNode != navbar && event.target != dropbutton) {navbar.classList.remove("responsive");}
 
+});
 </script>
 </body>
 </html>>
