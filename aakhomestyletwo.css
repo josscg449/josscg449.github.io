@@ -294,7 +294,7 @@ background-size: cover;
 .top {
 background-image: url("pianobackgroundinvertmobile.jpg");
 background-color: lightgrey;
-background-size: cover;
+background-size: 100% 85vh;
 }
 }
 .heading{

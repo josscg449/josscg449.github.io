@@ -176,7 +176,7 @@ function clickDrop() {
 if (dropdownmenu.className === "dropdown-content"){dropdownmenu.className += " alsoresponsive";} else
 {dropdownmenu.className = "dropdown-content";}
 }
-document.addEventListener("click", function(event){
+document.addEventListener("touchstart", function(event){
 var navbar = document.getElementById("navbar");
 if (event.target != navbar && event.target.parentNode != navbar && event.target != dropbutton) {navbar.classList.remove("responsive");}
 
