@@ -133,11 +133,11 @@ if (dropdownmenu.className === "dropdown-content"){dropdownmenu.className += " a
 {dropdownmenu.className = "dropdown-content";}
 };
 
-document.addEventListener("touchstart", function(event){
+document.addEventListener("touchend", function(event){
 var navbar = document.getElementById("navbar");
 var dropdownmenu = document.getElementById("dropdownid");
 var dropbutton = document.getElementById("dropbutton");
-if (event.target != navbar && event.target.parentNode != navbar && event.target != dropbutton) {navbar.classList.remove("responsive");}
+if (event.target != navbar && event.target.parentNode != navbar && event.target != dropbutton &&event.target !=dropdownmenu && event.target.parentNode !=dropdownmenu) {navbar.classList.remove("responsive");}
 
 });
 
