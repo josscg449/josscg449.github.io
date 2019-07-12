@@ -1,14 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Casio Privia PX-560 Review</title>
+<title>Casio Privia PX-160 Review</title>
 <link rel="icon" type="image/png" href="pianoicon.png">
 <link id = "pagestyle" href="aakhomestyle.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name = "viewport" content="width=device-width, initial-scale=1"> 
-<meta name = "description" content="A review on the Casio PX-560, a truly versatile, yet affordable digital stage piano. 
-See how far Casio have come in comparison to the other stage pianos on the market. It may come as a surprise, but Casio may
- have created the best all round digital piano to buy in 2019."> 
+<meta name = "description" content="If you're looking for a digital stage piano but you don't want to break the bank, check 
+out this review on the Casio Privia PX-160 review"> 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -49,7 +48,7 @@ See how far Casio have come in comparison to the other stage pianos on the marke
 <div class="content">
 <div class="rev">
 <div class="revhead">
-<h1>Casio Privia PX-560 Review: The Affordable Stage Piano That Does it All!</h1>
+<h1>Casio Privia PX-160 Review: Great piano sound that won't break the bank!</h1>
 </div>
 <div class="revdate">
 <p>By <a class= "author" href ="aakabout.html">Joss Gantley</a> May 25th 2019</p>
@@ -57,7 +56,11 @@ See how far Casio have come in comparison to the other stage pianos on the marke
 </div>
 <div class="review" align=center>
 
-
+<p>This stage piano is perfect if you need a stage piano but you don't want to spend too much. This model is a sister to the 
+<a href=a href="https://www.zzounds.com/a--3960325/item--CASPX560BE" rel="nofollow" target="_blank">Casio Privia PX-560</a> 
+which I currently use for recording and gigging. Let me tell you that Casio has come a long way in all aspects. I am very 
+impressed with the PX-560, I wasn't at all disappointed. With that said, the PX-160 is not the same piano and lacks not having a lot of
+features that the PX-560 has. 
 <p>I recently purchased this competitively priced stage piano to replace my <a href="https://www.zzounds.com/a--3960325/item--YAMDGX660" rel="nofollow" target="_blank">Yamaha DGX</a> which 
 is commonly known in the band as "The Beast". The Yamaha served me well, I've gigged it for 
 7 years but at 46lbs I decided it was time to get something more light weight. Years ago, I 
@@ -122,7 +125,7 @@ The best part about this stage piano is the price. The <a href="https://www.zzou
 <a href="https://www.zzounds.com/a--3960325" rel="nofollow" target="_blank">Zzounds</a>. I am a happy owner of this great digital stage piano and if you are considering it, I would not
 hesitate to buy it! The comparable stage pianos from other manufacturers will not come at this price, and will in most cases
 not even have as many great features as the Casio. The thing I love about this Piano is that it does everything. It looks 
-great in the living room on its furniture stand, and it's a great stage piano that I can gig with. When it comes to recording
+great in the living room on its furniture stand, and its a great stage piano that I can gig with. When it comes to recording
 I can tweak all the sounds how I want them with a wide range of effects and hex layers, if I want to get technical. It's a
 versatile instrument that is very user friendly in all aspects. I hope you enjoyed reading my Casio Privia PX-560 review!
 </p>

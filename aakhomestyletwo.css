@@ -299,7 +299,7 @@ background-size: 100% 150vw;
 }
 .heading{
 text-transform: uppercase;
-color: black;
+color: white;
 text-align: center;
 font-size: 75px;
 font-size: 5.5vw;
@@ -321,7 +321,7 @@ text-shadow: 3px 3px 5px darkgray;
 }
 }
 .gear {
-color: white;
+color: black;
 }
 @media only screen and (max-width: 1000px){
 .separate {
